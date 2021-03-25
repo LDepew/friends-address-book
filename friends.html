@@ -6,13 +6,23 @@
 </head>
 <body>
     <div>
-        <label>Enter a new name: </label>
-        <input id = "newName" type = "text">
-        <button onclick = "addName()">Add</button>
+        <label>Enter friends info: </label>
+        <input id = "iname" type = "text" placeholder="Name">
+        <input id = "iemail" type = "text" placeholder="Email">
+        <input id = "iphone" type = "text" placeholder="Phone">
+        <button onclick = "addFriend()">Add</button>
     </div>
-    <button onclick = "loadDiv()">Load Div</button>
-    <div id = "ps">
-        here is some text.
-    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody id = "tbody">
+
+        </tbody>
+    </table>
 </body>
 </html>
