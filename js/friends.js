@@ -8,5 +8,18 @@ const addFriend = () => {
         name: fname, email: femail, phone: fphone
     }
     friends.push(friend);
-    console.log(friends);
+    display();
+}
+
+const display = () => {
+    let tbody = document.getElementById("tbody");
+    tbody.innerHTML = "";
+    for(let friend of friends) {
+        let tr = "<tr>";
+        tr += `<td>${friend.name}</td>`;
+        tr += `<td>${friend.email}</td>`;
+        tr += `<td>${friend.phone}</td>`;
+        tr += "</tr>";
+        tbody.innerHTML += tr;
+    }
 }
